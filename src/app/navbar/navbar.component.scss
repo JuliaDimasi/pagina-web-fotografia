@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.general_navbar {
+  background-color:#333333;
+  text-align: center;
+  padding: 2vw;
+  justify-content: center;
+  display: block;
+  height: 20vh;
+  img{
+    width: 40%;
+    height: 40%;
+    border-radius: 100px;
+  }
+  ul {
+    font-family: "Montserrat";
+    font-size: 3vh;
+    list-style-type: none;
+    overflow: hidden;
+    li {
+      float: left;
+    }
+    li a {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 16px;
+    }
+  }
+}
