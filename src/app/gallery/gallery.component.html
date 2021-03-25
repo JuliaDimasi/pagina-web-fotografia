@@ -1,11 +1,32 @@
 <app-navbar></app-navbar>
 
-<div class="gallery-menu">
-    <ul class="list-group list-group-horizontal">
-        <li><a href="">Books</a></li>
-        <li><a href="">Productions</a></li>
-        <li><a href="">Ventures</a></li>
-    </ul>
+
+<div class="galleryMenu list-group list-group-horizontal">
+    <a class="c-preview">
+        <div class="c-preview__img">
+            <a class="books" routerLink="/books" routerLinkActive="active"><img style="width: 400px; height: 400px;"
+                    src="./assets/images/gallery/googo81135062_3254224204588962_450789175998808064_o.jpg" alt="">
+            </a>
+        </div>
+        <h2 class="c-preview__title">Books</h2>
+    </a>
+    <a class="c-preview">
+        <div class="c-preview__img">
+            <a class="productions" routerLink="/productions" routerLinkActive="active"><img style="width: 400px; height: 400px;"
+                    src="./assets/images/gallery/154762094_4121238714567628_5992528224347707487_o.jpg" alt="">
+            </a>
+        </div>
+        <h2 class="c-preview__title">Productions</h2>
+    </a>
+    <a class="c-preview">
+        <div class="c-preview__img">
+            <a class="ventures" routerLink="/ventures" routerLinkActive="active"><img style="width: 400px; height: 400px;"
+                    src="./assets/images/gallery/156586604_4138128089545357_7486254479261795598_o.jpg" alt="">
+            </a>
+        </div>
+        <h2 class="c-preview__title">Ventures</h2>
+    </a>
 </div>
+
 
 <app-footer></app-footer>

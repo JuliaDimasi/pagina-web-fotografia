@@ -1,0 +1,16 @@
+.about{
+    justify-content: center;
+    display: flex;
+    gap: 3em;
+    .about_info{
+        padding-left: 10vw;
+        padding-top: 5vw;
+    }
+    .about_img{
+        padding-left: 30vw;
+        .karen{
+            height: 80vh;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,33 +1,79 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-.gallery-menu{
-    background-image: url("../../assets/images/gallery/84349273_3059786080712902_7419807590139297792_o.jpg");
+.galleryMenu {
+  justify-content: center;
+  display: flex;
+  margin-top: 3%;
+  gap: 1.5em;
+  .c-preview {
+    background: #000;
+    background: -moz-linear-gradient(
+      -45deg,
+      #000000 0%,
+      #000000 25%,
+      #cec547 50%,
+      #dd5a5e 75%,
+      #707070 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      #000000 0%,
+      #000000 25%,
+      #cec547 50%,
+      #dd5a5e 75%,
+      #707070 100%
+    ); 
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #000000 25%,
+      #cec547 50%,
+      #dd5a5e 75%,
+      #707070 100%
+    );
+    background-size: 400% 400%;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: 80%;
-    ul {
-        font-family: "Montserrat";
-        font-size: 3vh;
-        list-style-type: none;
-        overflow: hidden;
-        padding: 15%;
-        li {
-          float: left;
-        }
-        li a {
-          color: rgb(0, 0, 0);
-          text-align: center;
-          text-decoration: none;
-          margin: 7vw;
-          padding: 16px;
-          border: rgb(0, 0, 0) 1px solid;
-        }
+    display: flex;
+    width: 400px;
+    height: 400px;
+    max-width: 100vw;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s all;
+    object-fit: cover;
+
+    &__img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.5;
+      mix-blend-mode: screen;
+      object-fit: cover;
+    }
+
+    &__title {
+      position: relative;
+      z-index: 10;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 2vw;
+      font-family: "Monserrat";
+    }
+
+    &:hover {
+      background-position: 100% 100%;
+
+      &__title {
+        text-shadow: 0 0 20px rgba(0, 0, 0, 1);
       }
+    }
+  }
 }
