@@ -1,11 +1,60 @@
 footer {
-    background-color: black;
-    text-align: center;
-    padding: 2vw;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm218batch7-katie-59.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=15d99e858fb0cf9613da8d9a105397d7");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1.5vw;
     position: absolute;
     bottom: 0;
-    justify-content: center;
-    display: flex;
     width: 100vw;
-    height: 10vh;
+    height: 13vh;
+    color: white;
+    .row {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        padding-top: 0.5vw;
+    }
+    .social_media {
+        a {
+            display: flex;
+            align-items: flex-end;
+            text-decoration: none;
+            span {
+                color: #c2ca6c;
+            }
+        }
+        border-right: 1px solid black;
+        svg {
+            color: rgb(255, 251, 251);
+            width: 4vw;
+            height: 4vh;
+        }
+        svg:hover {
+            color: #c2ca6c;
+            opacity: 0.7;
+        }
+    }
+    ul {
+        justify-content: center;
+        display: flex;
+        list-style-type: none;
+        line-height: 1;
+        text-align: center;
+
+        li {
+            padding: 10px;
+            span {
+                color: #c2ca6c;
+            }
+        }
+        svg {
+            color: rgb(255, 251, 251);
+            width: 4vw;
+            height: 4vh;
+        }
+        svg:hover {
+            color: #c2ca6c;
+            opacity: 0.7;
+        }
+    }
 }

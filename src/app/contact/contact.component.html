@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="contact list-group list-group-horizontal">
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.841988280728!2d-59.15242948495583!3d-37.32257041386823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911f78a01425b3%3A0x1a2c75a96443877d!2sAntonena%2059%2C%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1616982872535!5m2!1ses-419!2sar"
+            allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="email_form">
+        <h2>Get in touch with mee</h2>
+        <form [formGroup]="emailForm">
+            <label>Name:</label><input type="text" class="form-control" formControlName="userName">
+            <p class="text-danger" *ngIf="emailForm.controls['userName'].invalid">*Ingrese su nombre</p><br>
+            <label>Message:</label><textarea rows="5" cols="70" class="form-control"
+                formControlName="userMessage"></textarea>
+            <p class="text-danger" *ngIf="emailForm.controls['userMessage'].invalid">*Ingrese su mensaje</p><br>
+            <button [disabled]="emailForm.controls['userName'].invalid || emailForm.controls['userMessage'].invalid"
+                class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+<app-footer></app-footer>

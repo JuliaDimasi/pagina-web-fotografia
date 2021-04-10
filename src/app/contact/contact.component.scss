@@ -1,0 +1,21 @@
+.contact{
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm168-adj-07b.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a7d89ebd968bf7369972800f78986baa");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 80vh;
+    .map{
+        width: 50vw;
+        padding: 4vw;
+        iframe{
+            width: 45vw;
+            height: 55vh;      
+    }
+    .email_form{
+        display: flex;
+        justify-content: center;
+        border: black solid 1px ;
+        padding: 44vw;
+    }
+}
+}
