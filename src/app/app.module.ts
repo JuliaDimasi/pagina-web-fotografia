@@ -13,6 +13,8 @@ import { BooksComponent } from './books/books.component';
 import { ProductionsComponent } from './productions/productions.component';
 import { VenturesComponent } from './ventures/ventures.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+  
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
