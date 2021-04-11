@@ -14,6 +14,8 @@ import { ProductionsComponent } from './productions/productions.component';
 import { VenturesComponent } from './ventures/ventures.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PopUpConfirmedComponent } from './pop-up-confirmed/pop-up-confirmed.component';
   
 
 @NgModule({
@@ -29,12 +31,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     BooksComponent,
     ProductionsComponent,
     VenturesComponent,
+    PopUpConfirmedComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

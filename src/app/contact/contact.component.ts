@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PopUpConfirmedComponent } from '../pop-up-confirmed/pop-up-confirmed.component';
 
 
 @Component({
@@ -11,7 +13,7 @@ export class ContactComponent implements OnInit {
 
   emailForm:FormGroup;
 
-  constructor() { 
+  constructor(private modalService: NgbModal) { 
     this.emailForm = new FormGroup({
       userName : new FormControl('', Validators.required),
       userMessage : new FormControl('', Validators.required)
@@ -19,5 +21,12 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+ 
+  openPopUpConfirmed(){
+    this.modalService.open(PopUpConfirmedComponent,{
+      size: 'md', backdrop: 'static'
+    })
+  }
 
 }
+

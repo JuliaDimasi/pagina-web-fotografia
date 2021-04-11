@@ -1,21 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-.about{
-    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm168-adj-07b.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a7d89ebd968bf7369972800f78986baa");
-    justify-content: center;
-    display: flex;
-    gap: 3em;
-    .about_info{
-        padding-left: 5vw;
-        padding-top: 5vw;
-        font-family: "Montserrat";
+.about {
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm168-adj-07b.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a7d89ebd968bf7369972800f78986baa");
+  justify-content: center;
+  display: flex;
+  gap: 3em;
+
+  .about_info {
+    padding-left: 5vw;
+    padding-top: 5vw;
+    font-family: "Montserrat";
+  }
+
+  .about_img {
+    padding-left: 10vw;
+
+    .karen {
+      width: 45vw;
+      height: 80vh;
+      object-fit: cover;
     }
-    .about_img{
-        padding-left: 10vw;
-        .karen{
-            width: 45vw;
-            height: 80vh;
-            object-fit: cover;
-        }
-    }
+  }
 }

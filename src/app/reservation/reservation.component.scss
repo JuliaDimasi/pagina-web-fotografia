@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.reservation{
+    font-family: "Montserrat";
+    padding: 2vw;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm168-adj-07b.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a7d89ebd968bf7369972800f78986baa");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 75vh;
+
+    h4{
+        justify-content: center;
+        display: flex;
+        color: #e98a6d;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+        
+    }
+
+}

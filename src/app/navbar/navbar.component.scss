@@ -7,20 +7,25 @@
   justify-content: center;
   display: flex;
   height: 15vh;
+
   ul {
     padding: 2vw;
     font-family: "Montserrat";
     list-style-type: none;
     overflow: hidden;
+
     a {
       opacity: 1;
     }
+
     a:hover {
       opacity: 0.5;
     }
+
     li {
       float: left;
     }
+
     li a {
       background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
       text-transform: uppercase;
@@ -33,14 +38,14 @@
       -webkit-background-clip: text;
       line-height: 1;
       font-size: 2vw;
-      }
-    
-      & .active{
-        border-bottom: 1px solid rgb(114, 113, 113) ;
-        
-        
-        
     }
-    
+
+    & .active {
+      border-bottom: 1px solid rgb(114, 113, 113);
+
+
+
+    }
+
   }
 }

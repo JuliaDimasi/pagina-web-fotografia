@@ -4,3 +4,5 @@
     font-family: "AbrilFatface";
     src: local("AbrilFatface"), url(./assets/fonts/AbrilFatface-Regular.ttf) format("truetype");
 }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

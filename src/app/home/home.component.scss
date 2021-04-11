@@ -11,12 +11,14 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+
   @media screen and (max-width: 480px) {
     margin-top: 0px;
     border-top-width: 100px;
     padding: 0vw;
     padding-top: 100px;
   }
+
   .logo_name {
     color: rgb(243, 236, 236);
     text-align: center;
@@ -25,6 +27,7 @@
     margin: auto;
     padding: 3%;
     width: 80vw;
+
     @media screen and (max-width: 480px) {
       .logo_name {
         margin: auto;
@@ -32,6 +35,7 @@
         padding: 0vw;
       }
     }
+
     //efecto logo
     .name {
       background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
@@ -44,19 +48,23 @@
       -moz-background-clip: text;
       -webkit-background-clip: text;
     }
+
     .slogan {
       font-family: "Montserrat";
+
       @media screen and (max-width: 480px) {
         font-size: 4.5vw;
       }
     }
   }
+
   .home_navbar {
     nav {
       border-top: solid 1px wheat;
       margin-left: 10vw;
       margin-right: 10vw;
     }
+
     ul {
       font-family: "Montserrat";
       font-size: 25px;
@@ -139,6 +147,7 @@
         flex-direction: column;
       }
     }
+
     @media screen and (min-width: 935px) and (max-width: 1200px) {
       nav ul {
         text-align: center;
@@ -147,21 +156,26 @@
       }
     }
   }
+
   .social_media {
     padding-top: 5vw;
+
     ul {
       list-style-type: none;
       padding: 3.5vw;
       justify-content: center;
       display: flex;
+
       li {
         text-decoration: none !important;
         margin-right: 35px;
+
         a {
           svg {
             color: rgb(255, 251, 251);
             width: 2vw;
           }
+
           svg:hover {
             color: rgb(221, 90, 90);
             opacity: 0.7;
@@ -169,6 +183,7 @@
         }
       }
     }
+
     @media screen and (max-width: 768px) {
       ul li a svg {
         padding-left: 5vw;

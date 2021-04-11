@@ -6,15 +6,16 @@
             allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="email_form">
-        <h2>Get in touch with mee</h2>
+        <strong>GET IN TOUCH WITH ME: cavadinikaren@gmail.com</strong>
+        <p><span style="color:rgb(224, 17, 17)">(*) Required fields</span></p>
         <form [formGroup]="emailForm">
             <label>Name:</label><input type="text" class="form-control" formControlName="userName">
-            <p class="text-danger" *ngIf="emailForm.controls['userName'].invalid">*Ingrese su nombre</p><br>
-            <label>Message:</label><textarea rows="5" cols="70" class="form-control"
+            <p class="text-danger" *ngIf="emailForm.controls['userName'].invalid">*Enter your name</p>
+            <label>Message:</label><textarea rows="3" cols="60" class="form-control"
                 formControlName="userMessage"></textarea>
-            <p class="text-danger" *ngIf="emailForm.controls['userMessage'].invalid">*Ingrese su mensaje</p><br>
+            <p class="text-danger" *ngIf="emailForm.controls['userMessage'].invalid">*Enter your message</p><br>
             <button [disabled]="emailForm.controls['userName'].invalid || emailForm.controls['userMessage'].invalid"
-                class="btn btn-primary" type="submit">Enviar</button>
+                class="btn btn-primary" type="submit" (click)="openPopUpConfirmed()">Enviar</button>
         </form>
     </div>
 </div>
